@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driftrail"
+version = "2.0.0"
+description = "DriftRail SDK - AI Safety & Observability Platform for LLM monitoring, guardrails, and compliance"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "DriftRail", email = "support@driftrail.com"}
+]
+maintainers = [
+    {name = "DriftRail", email = "support@driftrail.com"}
+]
+keywords = [
+    "ai",
+    "llm",
+    "observability",
+    "safety",
+    "monitoring",
+    "audit",
+    "guardrails",
+    "compliance",
+    "openai",
+    "anthropic",
+    "gemini",
+    "machine-learning",
+    "mlops"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Monitoring",
+    "Typing :: Typed",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+async = ["aiohttp>=3.8.0"]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "mypy>=1.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://driftrail.com"
+Documentation = "https://docs.driftrail.com"
+Repository = "https://github.com/cutmob/DriftRail-Python"
+Changelog = "https://github.com/cutmob/DriftRail-Python/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/cutmob/DriftRail-Python/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["driftrail*"]
+
+[tool.setuptools.package-data]
+driftrail = ["py.typed"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
