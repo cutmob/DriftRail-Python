@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "driftrail"
-version = "2.0.0"
-description = "DriftRail SDK - AI Safety & Observability Platform for LLM monitoring, guardrails, and compliance"
+version = "2.1.0"
+description = "DriftRail SDK - Complete AI Safety & Observability Platform with enterprise features for LLM monitoring, guardrails, drift detection, tracing, evaluations, and compliance"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
