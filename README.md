@@ -421,8 +421,6 @@ from driftrail import (
 
 - [Documentation](https://driftrail.com/docs)
 - [API Reference](https://driftrail.com/api-reference)
-- [Dashboard](https://app.driftrail.com)
-- [GitHub](https://github.com/driftrail/driftrail-python)
 
 ## License
 
